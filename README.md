@@ -1,2 +1,5 @@
-# github2pandas_tutorials
-Support github2pandas users by tutorials and examples
+# github2pandas Tutorials
+
+| File        | Purpose                                                            |
+| ----------- | ------------------------------------------------------------------ |
+| Overview.md | Application of github2pandas_manager for GitHub-Classroom projects |
