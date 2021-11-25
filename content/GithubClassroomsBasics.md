@@ -43,9 +43,10 @@ Hi everyone, my name is Sebastian Zug; today I would like to introduce you to so
       {{0-1}}
 ![github2pandas_manager](../pics/pypi.png)
 
------------------------
-
+      {{0-1}}
 _This material was designed with [Liascript](https://liascript.github.io/). Its content can be found on [Repo-Link](https://github.com/TUBAF-IFI-DiPiT/github2pandas_tutorials/blob/main/content/GithubClassroomsBasics.md). For starting the interactive mode push the button on the first slide._ ![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)
+
+-----------------------
 
       --{{1}}--
 But let's get started. Github Classrooms are an excellent way to teach students about the features and use of project management tools and version control. You define a task in a repository, and a clone is created for individual students or groups after their login. Afterward they work independently on the given task and commit a result. This can be automatically evaluated by pattern matching or test methods.
