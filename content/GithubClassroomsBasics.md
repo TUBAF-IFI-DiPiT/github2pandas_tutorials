@@ -37,24 +37,24 @@ translation: Français translations/French.md
       --{{0}}--
 Hi everyone, my name is Sebastian Zug; today I would like to introduce you to some new Python modules for analyzing student activity in a Github Classroom. The design and implementation of these packages are part of the "DiP-iT" project, a national research project at German universities. It integrates partners from Humboldt Universität zu Berlin, Otto-von-Guericke University and my affilation, TU Bergakademie Freiberg. This material was designed with Liascript; it can be found in an Github repository under the given Link.
 
-      {{0-1}}
-@playback(../sound/1_0-3.mp3)
-
-      {{0-1}}
+      {{0-2}}
 ![github2pandas_manager](../pics/pypi.png)<!-- width="75%" -->
 
-      {{0-1}}
+      {{1-2}}
+@playback(../sound/1_0-3.mp3)
+
+      {{1-2}}
 _This material was designed with [Liascript](https://liascript.github.io/). Its content can be found on [Repo-Link](https://github.com/TUBAF-IFI-DiPiT/github2pandas_tutorials/blob/main/content/GithubClassroomsBasics.md). For starting the interactive mode push the button on the first slide._ ![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)
 
 -----------------------
 
-      --{{1}}--
+      --{{2}}--
 But let's get started. Github Classrooms are an excellent way to teach students about the features and use of project management tools and version control. You define a task in a repository, and a clone is created for individual students or groups after their login. Afterward they work independently on the given task and commit a result. This can be automatically evaluated by pattern matching or test methods.
 
-      {{1-2}}
+      {{2-3}}
 @playback(../sound/1_1-3.mp3)
 
-      {{1-2}}
+      {{2-3}}
 `````````
  Teachers repository                              Student repositories
  --------------------                             --------------------
@@ -81,14 +81,14 @@ But let's get started. Github Classrooms are an excellent way to teach students 
 
 `````````
 
-      --{{2}}--
+      --{{3}}--
 However, depending on the size of your course, supervising student's activity becomes complex. Github Classooms provides some mechanisms, but these can only answer specific questions to a limited extent. As a result, you click from student repository to repository and evaluate the results manually.
 
 
-        {{2-3}}
+        {{3-4}}
 @playback(../sound/1_2-3.mp3)
 
-        {{2-3}}
+        {{3-4}}
 `````````
  Teachers repository                              Student repositories
  --------------------                             --------------------
@@ -122,13 +122,13 @@ However, depending on the size of your course, supervising student's activity be
 Report on activities
 `````````
 
---{{3}}--
+--{{4}}--
 Github2pandas closes this gap and allows the automatic aggregation of repository data like commits, issues or pull requests etc. The collected information is stored either in Python pandas dataframes or in csv files. The collected data is anonymized by github2pandas and can be evaluated as feedback for the instructor.
 
-         {{3-4}}
+         {{4-5}}
 @playback(../sound/1_3-3.mp3)
 
-{{3-4}}
+{{4-5}}
 `````````
  Teachers repository                              Student repositories
  --------------------                             --------------------
