@@ -41,7 +41,9 @@ Hi everyone, my name is Sebastian Zug; today I would like to introduce you to so
 @playback(../sound/1_0-3.mp3)
 
       {{0-1}}
-![github2pandas_manager](../pics/pypi.png)
+![github2pandas_manager](../pics/pypi.png)<!--
+style="width: 80%;"
+-->
 
       {{0-1}}
 _This material was designed with [Liascript](https://liascript.github.io/). Its content can be found on [Repo-Link](https://github.com/TUBAF-IFI-DiPiT/github2pandas_tutorials/blob/main/content/GithubClassroomsBasics.md). For starting the interactive mode push the button on the first slide._ ![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)
