@@ -1,7 +1,7 @@
 <!--
 author:   Sebastian Zug, André Dietrich
 email:    sebastian.zug@informatik.tu-freiberg.de, andre.dietrich@informatik.tu-freiberg.de,
-version:  0.0.2
+version:  0.0.3
 
 language: en
 narrator: US English Male
