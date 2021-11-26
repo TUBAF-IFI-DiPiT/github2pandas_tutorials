@@ -78,10 +78,10 @@ test methods.
 | # Digital Systems|\          .-,(   ),-.        ║ ...                     ║
 | (Sprint 2021)    +-+      .-(  Github   )-.     ╚═════════════════════════╝
 |                    | --> (    Classroom    )
-|"##"Task 1          |      '-( Assignemt )-'            .-----------.
-| + Implement ...    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
-+--------------------+                ^ |         ║      '-----------'      ║
-                                      | | clone   ║ Digital Systems 2021    ║
+| ## Task 1          |      '-( Assignemt )-'            .-----------.
+|                    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
+| + Implement ...    |                ^ |         ║      '-----------'      ║
++--------------------+                | | clone   ║ Digital Systems 2021    ║
                                       | +-------> ║                         ║
                                       +---------- ║"#"include<stdio.h>      ║
                                                   ║ ...                     ║
@@ -114,10 +114,10 @@ student repository to repository and evaluate the results manually.
 | # Digital Systems|\          .-,(   ),-.        ║ ...                     ║
 | (Sprint 2021)    +-+      .-(  Github   )-.     ╚═════════════════════════╝
 |                    | --> (    Classroom    )
-|"##"Task 1          |      '-( Assignemt )-'            .-----------.
-| + Implement ...    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
-+--------------------+                ^ |         ║      '-----------'      ║
-                                      | | clone   ║ Digital Systems 2021    ║
+| ## Task 1          |      '-( Assignemt )-'            .-----------.
+|                    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
+| + Implement ...    |                ^ |         ║      '-----------'      ║
++--------------------+                | | clone   ║ Digital Systems 2021    ║
                                       | +-------> ║                         ║
                                       +---------- ║"#"include<stdio.h>      ║
                                                   ║ ...                     ║
@@ -157,22 +157,23 @@ anonymized by github2pandas and can be evaluated as feedback for the instructor.
 | # Digital Systems|\          .-,(   ),-.        ║ ...                     ║
 | (Sprint 2021)    +-+      .-(  Github   )-.     ╚═════════════════════════╝
 |                    | --> (    Classroom    )
-|"##"Task 1          |      '-( Assignemt )-'            .-----------.
-| + Implement ...    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
-+--------------------+                ^ |         ║      '-----------'      ║
-                                      | | clone   ║ Digital Systems 2021    ║
-+--------------------+                | +-------> ║                         ║
-| # Digital Systems  |\               +---------- ║"#"include<stdio.h>      ║
-| Report generator   +-+                          ║ ...                     ║
-|                      | <----------------+       ╚═════════════════════════╝
-| import github2pandas | ---+             |
-+----------------------+    |             |                     .....
-                            v             |      |                           |
-+-------------------------------+         |      .-------------+-------------.
-| Used features:                |         |                    |
-|    | issues | actions | ... | |         +--------------------+
-| A  |    X   |    x    |     | |           script based aggreation
-| B  |    x   |         |     | |           & analysis
+| ## Task 1          |      '-( Assignemt )-'            .-----------.
+|                    |         '-.(   ).-'        ╔══════| Student 2 |══════╗
+| + Implement ...    |                ^ |         ║      '-----------'      ║
++--------------------+                | | clone   ║ Digital Systems 2021    ║
+                                      | +-------> ║                         ║
++--------------------+                +---------- ║"#"include<stdio.h>      ║
+| # Digital Systems  |\                           ║ ...                     ║
+| Report generator   +-+                          ╚═════════════════════════╝
+|                      | <----------------+
+| import github2pandas | ---+             |                     .....
++----------------------+    |             |      |                           |
+                            v             |      .-------------+-------------.
++-------------------------------+         |                    |
+| Used features:                |         +--------------------+
+|    | issues | actions | ... | |           script based aggreation
+| A  |    X   |    x    |     | |           & analysis
+| B  |    x   |         |     | |
 +-------------------------------+
 Report on activities
 `````````
