@@ -35,7 +35,7 @@ translation: Français translations/French.md
 # Automated supervision of student activities in Github Classrooms
 
       --{{0}}--
-Hi everyone, my name is Sebastian Zug; today I would like to introduce you to some new Python modules for analyzing student activity in a Github Classroom. The design and implementation of these packages are part of the "DiP-iT" project, a national research project at German universities. It integrates partners from Humboldt Universität zu Berlin, Otto-von-Guericke University and my affilation, TU Bergakademie Freiberg. This material was designed with Liascript; it can be found in an Github repository under the given Link.
+Hi everyone, Sebastian Zug here from TU Bergakademie Freiberg, introducing you to some new Python modules for analyzing student activity in a Github Classroom. The team in Freiberg designed and implemented these packages with our partners from two other German universites: Humboldt University in Berlin and Otto-von-Guericke University in Magdeburg as part of the "DiP-iT" national research project. We designed this material with Liascript and you can find it in this Github repository.; it can be found in an Github repository under the given Link. Let's start with some background information and concepts. Afterwards, we jump into a practical examples.
 
       {{0-2}}
 ![github2pandas_manager](../pics/pypi.png)<!-- width="75%" -->
@@ -49,7 +49,7 @@ _This material was designed with [Liascript](https://liascript.github.io/). Its 
 -----------------------
 
       --{{2}}--
-But let's get started. Github Classrooms are an excellent way to teach students about the features and use of project management tools and version control. You define a task in a repository, and a clone is created for individual students or groups after their login. Afterward they work independently on the given task and commit a result. This can be automatically evaluated by pattern matching or test methods.
+Github Classrooms are an excellent way to teach students about the features and use of project management tools and version control. You define a task in a repository, and a clone is created for individual students or groups after their login. Afterward they work independently on the given task and commit a result. This can be automatically evaluated by pattern matching or test methods.
 
       {{2-3}}
 @playback(../sound/1_1-3.mp3)
