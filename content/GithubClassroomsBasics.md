@@ -1,15 +1,13 @@
 <!--
 author:   Sebastian Zug, André Dietrich
 email:    sebastian.zug@informatik.tu-freiberg.de
-version:  0.0.4
+version:  0.0.5
 
 language: en
 narrator: US English Male
 
 comment:  Describes the application of github2pandas_manager for
           Github-Classroom projects
-
-logo:   ../pics/Logo-DiP-iT.png
 
 import: https://github.com/LiaTemplates/Pyodide
 
@@ -329,7 +327,7 @@ Classrooms, you can find more information in the well-made
      {{0}}
 @playback(../sound/4_0.mp3)
 
-![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="85%" -->
+![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="75%" -->
 
 
 ### Installation
