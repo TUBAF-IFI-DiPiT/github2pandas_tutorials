@@ -1,7 +1,7 @@
 <!--
 author:   Sebastian Zug, André Dietrich
 email:    sebastian.zug@informatik.tu-freiberg.de
-version:  0.0.3
+version:  0.0.4
 
 language: en
 narrator: US English Male
@@ -35,6 +35,8 @@ mark: <span style="background-color: @0;
                                   padding: 6px 16px 6px 16px;
                                   ">@1</span>
 red:  @mark(#FF888888,@0)
+green: @mark(lightgreen,@0)
+gray: @mark(gray,@0)
 
 -->
 
@@ -327,7 +329,7 @@ Classrooms, you can find more information in the well-made
      {{0}}
 @playback(../sound/4_0.mp3)
 
-![GitHubClassroomExample](../pics/GitHubClassroomExample.png)
+![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="85%" -->
 
 
 ### Installation
@@ -420,7 +422,7 @@ GITHUB_API_TOKEN ="ghp_N3nRrqNPEHt0iRhuheasdfsfas9kFxGI42GQfv"
     {{0-1}}
 ********************************************************************************
 
-![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="60%" -->
+![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="50%" -->
 
    --{{0}}--
 Please remember, we named our classroom `GitHubClassroom-Demo` and called the
@@ -601,15 +603,15 @@ strategy related to these things.
 | repo_name              | team-avengers | team-ovgu | teamtuf |
 | ---------------------- | ------------- | --------- | ------- |
 | `size`                 | 5             | 0         | 2       |
-| `contributor_count`    | 3             | 1         | 3       |
+| `contributor_count`    | 3             | @red(1)   | 3       |
 | `branch_count`         | 1             | 1         | 1       |
-| `commit_count`         | 8             | 1         | 4       |
+| `commit_count`         | @green(8)     | 1         | 4       |
 | `pullrequest_count`    | 0             | 0         | 0       |
 | `release_count`        | 0             | 0         | 0       |
 | `workflow_count`       | 0             | 0         | 0       |
 | `readme_length`        | 436           | 155       | 444     |
-| `issues_count`         | 2             | 0         | 0       |
-| `issues_comment_count` | 6             | 0         | 0       |
+| `issues_count`         | @green(2)     | 0         | 0       |
+| `issues_comment_count` | @green(6)     | 0         | 0       |
 
 
 ********************************************************************************
@@ -631,13 +633,13 @@ generate statistics that can be discussed in the actual lecture.
 | anonym_author             | repo_name                       | commit_message                                                                                                |
 | ------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | would-hot-power-president | programmingtask_1-team-avengers | Initial commit                                                                                                |
-| @red(think-old-current-family)  | programmingtask_1-team-avengers | Update README.md  I feel this is a little too much demanding. I added a smiley and removed exclamation marks. |
+| @green(think-old-current-family)  | programmingtask_1-team-avengers | Update README.md  I feel this is a little too much demanding. I added a smiley and removed exclamation marks. |
 | find-different-free-war   | programmingtask_1-team-avengers | Update README.md                                                                                              |
 | find-different-free-war   | programmingtask_1-team-avengers | Update README.md                                                                                              |
 | find-different-free-war   | programmingtask_1-team-avengers | Update README.md                                                                                              |
 | find-different-free-war   | programmingtask_1-team-avengers | Update README.md                                                                                              |
 | find-different-free-war   | programmingtask_1-team-avengers | Update README.md                                                                                              |
-| @red(think-old-current-family)  | programmingtask_1-team-avengers | Update README.md  fixed incomplete sentence                                                                   |
+| @green(think-old-current-family)  | programmingtask_1-team-avengers | Update README.md  fixed incomplete sentence                                                                   |
 | would-hot-power-president | programmingtask_1-team-ovgu     | Initial commit                                                                                                |
 | would-hot-power-president | programmingtask_1-teamtuf       | Initial commit                                                                                                |
 | call-foreign-party-result | programmingtask_1-teamtuf       | Update README.md                                                                                              |
