@@ -11,21 +11,6 @@ comment:  Describes the application of github2pandas_manager for
 
 import: https://github.com/LiaTemplates/Pyodide
 
-@playback
-<script>console.log("playing @0")</script>
-<script modify="false">
-  let mute = false
-
-  try {
-    mute = JSON.parse(localStorage.getItem("settings")).mode == "Textbook"
-  } catch (e) {
-    console.log("error: ", e)
-  }
-
-  `LIASCRIPT: <audio ${mute ? "controls" : "autoplay"}><source src="@0#t=0" type="audio/mpeg"></audio>`
-</script>
-@end
-
 mark: <span style="background-color: @0;
                                   display: flex;
                                   width: calc(100% + 32px);
@@ -71,8 +56,6 @@ __André Dietrich, Sebastian Zug, 2021__
 -----------------------------------------------------------
 
 
-@playback(../sound/1_0.mp3)
-
 ## Concepts
 
     --{{0}}--
@@ -83,8 +66,6 @@ groups after their login. Afterward they work independently on the given task
 and commit a result. This can be automatically evaluated by pattern matching or
 test methods.
 
-     {{0-1}}
-@playback(../sound/2_0-2.mp3)
 
      {{0-1}}
 `````````
@@ -122,9 +103,6 @@ student repository to repository and aggregate the results manually.
 
      {{1-2}}
 ***************************************************************************
-
-@playback(../sound/2_1-2.mp3)
-
 
 `````````
  Teachers repository                              Student repositories
@@ -171,9 +149,6 @@ Github2pandas closes this gap and allows the automatic aggregation of repository
 data like commits, issues or pull requests etc. The collected information is
 stored either in Python pandas dataframes or in csv files. The collected data is
 anonymized by github2pandas and can be evaluated as feedback for the instructor.
-
-     {{2-3}}
-@playback(../sound/2_2-2.mp3)
 
      {{2-3}}
 `````````
@@ -224,9 +199,6 @@ Finally, Github2pandas_manager identifies the relevant repositories and collects
 the desired data set for each of them.  In the end, the information is saved as
 a pandas data frame or csv file.
 
-       {{0}}
-@playback(../sound/3_0-3.mp3)
-
     {{0-1}}
 ![Workflow](https://www.plantuml.com/plantuml/svg/fLDDYnD14BtthoZmeg1py9P0P4LPzR0NGJmkbUbAfxG_nghg3OlutqqFSKRSsMYmOPXYfjvxLU_HLseeLbDqs5iH-AGaRa0nxdd0R13OzdNxybXxrDk46SEv3kVHS8jAfy_mPBMwlbwjdDjiu2CDHTcAtCFh48G26fSCcurpJHTUl5gMMuFCo07DIBB2q-uUKtpc5Y1dkG9b4ZG2eM-LrFv6i0OJp9hO_a2SqS2i1vAf_pz6dFQEh3Qw-1OD7_WNInd6xjk-r6nWd4WT7C_uv_kRaXARFeSFgfMExyz5lkvYEHpBhkj-E3YTN9eiXxr1sJqstqt9RIZE0OGIScxLExRtTVjhPuZS1Bk9-DyyM4zupfxls5UCuD5mcMV6pq31mnBYWTGPnkMjrOhGI0sSOP3oXNg3NOcUP2IZx5rxBesx3XwD07_BTC_QKfy3lo49rAA-c3sDoDdEoI3OSIHzdA_ToSbMyjFcg73ogWZqUdVYkQBiQue_0G00)
 
@@ -238,9 +210,6 @@ relevant repositories according to white and black patterns applied on repo
 names. Multiple entries can be included in both lists, whereby black-list
 entries are excluded from aggregation. In the example, the issue list and a complete
 overview of the versions is in focus of the project.
-
-    {{1}}
-@playback(../sound/3_1-3.mp3)
 
     {{1-3}}
 ```yaml  config_data_aggregation.yml
@@ -275,9 +244,6 @@ we can analyze afterwards. We are going to talk about the installation process
 in several minutes. As you can see, we run two aggregation loops for Repository
 data as well as mentioned issue data.
 
-     {{2}}
-@playback(../sound/3_2-3.mp3)
-
     {{2-4}}
 ```
 > pipenv run python3 -m github2pandas_manager -path config_data_aggregation.yml
@@ -303,9 +269,6 @@ downloaded data sets of 4 projects. All of them started in 2021 but have a
 different history, number of contributors or code size. Even at this level, the overview of the students' repositories can provide
 important insights. Which features are not or not effectively used and should be presented in the exercise again.
 
-     {{3}}
-@playback(../sound/3_3-3.mp3)
-
     {{3-4}}
 <!-- data-type="none" -->
 | repo_name               | creation_date       | size | contributor_count | branch_count | commit_count | commit_comment_count | last_commit_date    | labels_count | tag_count | milestone_count | pullrequest_count | pullrequest_review_count | release_count | workflow_count | readme_length | issues_count | issues_comment_count | has_wiki | has_pages | has_projects | has_downloads | watchers_count | is_fork | prog_language    |
@@ -324,9 +287,6 @@ this tutorial. Many thanks for this. If you are still unsure about using
 Classrooms, you can find more information in the well-made
 [tutorials](https://www.youtube.com/watch?v=xVVeqIDgCvM).
 
-     {{0}}
-@playback(../sound/4_0.mp3)
-
 ![GitHubClassroomExample](../pics/GitHubClassroomExample.png)<!-- width="75%" -->
 
 
@@ -339,9 +299,6 @@ of a global installation it easier to resolve our module's dependencies. The las
 `github2pandas_manager`. This step will deploy `github2pandas` and a whole set
 of other packages in the background. At the end of step 3, you should get the
 output below on your command line.
-
-     {{0}}
-@playback(../sound/5_0.mp3)
 
 |                                                      | Commandline                            |
 | ---------------------------------------------------- | -------------------------------------- |
@@ -383,9 +340,6 @@ program to access GitHub content, the token substitutes the password and is sent
 to the server in the background. There are already many tutorials explaining how to
 generate the token; I have embedded one example here.
 
-     {{0}}
-@playback(../sound/6_0-1.mp3)
-
 !?[GitHubToken](https://www.youtube.com/watch?v=SzrETQdGzBM)
 
 > **You will see the token only during the generation process! Make a copy of the line immediately!**
@@ -402,9 +356,6 @@ Please copy the token as an environmental variable to a hidden `.env` file. It
 is automatically read by the Python interpreter when you start the script. The
 result should look like the listing below. Dont worry, its not a valid token for
 my account.
-
-    {{1}}
-@playback(../sound/6_1-1.mp3)
 
 ```bash  .env
 GITHUB_API_TOKEN ="ghp_N3nRrqNPEHt0iRhuheasdfsfas9kFxGI42GQfv"
@@ -430,9 +381,6 @@ repository names by the already mentioned black and white patterns. Hence, we
 should aim at repositories with `programmingtask_1-` in name to cover all of our
 student's activities.
 
-     {{0}}
-@playback(../sound/7_0-1.mp3)
-
 List of extracted repository URLs:
 
 + `https://github.com/GitHubClassroom-Demo/programmingtask_1-teamtuf`
@@ -453,9 +401,6 @@ List of extracted repository URLs:
    --{{1}}--
 We keep this information in the configuration file located in the main folder of
 our demo project. The file should look like the one shown in the listing below.
-
-     {{1}}
-@playback(../sound/7_1-1.mp3)
 
 **Step 6 - Config file preparation**
 
@@ -494,9 +439,6 @@ Now we have everything together, the token is stored in an environemental
 variable, the configuration file is in the project folder and the installation
 process has been completed successfully.
 
-     {{0}}
-@playback(../sound/8_0-2.mp3)
-
 Preparation completed:
 
 + `github2pandas_manager` installation finished
@@ -515,9 +457,6 @@ Preparation completed:
 Calling the actual script is a bit more complex because we are using the virtual
 environment. The following listing shows the meaning of each command line
 parameter. Don't miss to include the minus symbols in front of "m" and "path". pipenv starts our python3 example in the virtual environment. We call the main file of the github2pandas_manager package and pass our configuration file under the given path.
-
-    {{1}}
-@playback(../sound/8_1-2.mp3)
 
 ```shell Linux example
  pipenv run python3 -m github2pandas_manager -path config_data_aggregation.yml
@@ -551,9 +490,6 @@ parameter. Don't miss to include the minus symbols in front of "m" and "path". p
 If you preparation was successful and you started the script, the output should
 look like the following listing. Afterward, we have 3 csv and python pandas dataframes
 available in our examples folder.
-
-    {{2}}
-@playback(../sound/8_2-2.mp3)
 
 ```shell
 > pipenv run python3 -m github2pandas_manager -path config_data_aggregation.yml
@@ -594,9 +530,6 @@ the auto-generated initial commit. None of the teams uses branches, pull
 requests, or any of the other features. Probably we have to revise our teaching
 strategy related to these things.
 
-    {{0}}
-@playback(../sound/9_0-1.mp3)
-
 <!--data-type="none"-->
 | repo_name              | team-avengers | team-ovgu | teamtuf |
 | ---------------------- | ------------- | --------- | ------- |
@@ -625,9 +558,6 @@ self-explaining messages and added individual information for each commit. By ex
 the default message contents, we can supervise this aspect generally and
 generate statistics that can be discussed in the actual lecture.
 
-    {{1}}
-@playback(../sound/9_1-1.mp3)
-
 | anonym_author             | repo_name                       | commit_message                                                                                                |
 | ------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | would-hot-power-president | programmingtask_1-team-avengers | Initial commit                                                                                                |
@@ -652,9 +582,6 @@ generate statistics that can be discussed in the actual lecture.
      --{{0}}--
 What are the next steps? We have to extend the data aggregation process by integrating additional elements and improve the robustness of the software. Secondly, it is necessary to adapt and complete the documentation of our project on all levels. And as a last point, we are going to include additional tutorials for data evaluation. As a medium-term goal we aim at an automated feedback systems for our students, tutors and lectures based on github2pandas_manager.
 
-    {{0}}
-@playback(../sound/10_0.mp3)
-
 - Improving stability of the aggregations processes
 - Extending the documentation
 - Providing more tutorials especially on data exploration and classification based on collected data sets
@@ -663,9 +590,6 @@ What are the next steps? We have to extend the data aggregation process by integ
 
       --{{0}}--
 If you are interested to support this open source project as a developer or as a lecturer with new ideas or requirements don't hesitate to contact us. Additionally, we are interested in your experiences when using github2pandas_manager. Looking forward to your feedback or questions!
-
-    {{0}}
-@playback(../sound/11_0.mp3)
 
 > Sebastian Zug, TU Bergakademie Freiberg, [sebastian.zug@informatik.tu-freiberg.de](mailto:sebastian.zug@informatik.tu-freiberg.de)
 
